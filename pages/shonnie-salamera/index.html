@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Modern Portfolio</title>
+
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+  <img class="bg-img" src="images/MelRibeiro - Overview.gif" alt="background hero">
+  <div class="bg-overlay"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 fixed-top fade-in">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-gold" href="#home">Shonnie Salamera</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-gold" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero py-5 fade-in">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center fade-in">
+          <div class="profile-img">
+            <img src="images/profile.jpg" alt="Profile picture of Shonnie Salamera" class="img-fluid rounded-circle" />
+          </div>
+        </div>
+
+        <div class="col-md-7 fade-in">
+          <h1 class="text-gold">
+            <span id="typing"></span>
+          </h1>
+          <p class="fs-1 mt-3">
+            Turning creativity into code and ideas into reality.
+          </p>
+          <div class="social-links my-4">
+            <a href="https://github.com/Tooru-kokonoe" target="_blank" aria-label="GitHub" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com/ShonnieSalamera1" target="_blank" aria-label="Facebook" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about py-5 fade-in">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center fade-in">
+          <img src="images/software-developer-coding-laptop.jpg" alt="Workspace with a laptop and coding on screen" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-7 fade-in">
+          <h2 class="text-gold display-1">About Me</h2>
+          <h1 class="mb-3 text-light">
+            College Student | Aspiring Web Developer
+          </h1>
+          <p class="text-light lead fs-3">
+            Hello! I'm Shonnie Salamera, a passionate college student with a
+            love for technology and design.
+          </p>
+          <p class="text-light fs-3">
+            Outside of coding, I enjoy reading, playing games, and exploring
+            new hobbies.
+          </p>
+          <a href="#contact" class="btn btn-gold mt-3">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills py-5">
+    <div class="container">
+      <div class="row align-items-center g-4 border-0">
+        <div class="col-md-6">
+          <div id="aboutCarousel" class="carousel slide rounded" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="images/python.jfif" class="d-block" alt="skill 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/HTML5logo.svg" class="d-block" alt="skill 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/CSS3logosvg.svg" class="d-block" alt="skill 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/Javascript.jfif" class="d-block" alt="skill 4" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="text-gold mb-3 display-1">My Skills</h2>
+          <p class="text-light lead fs-2">
+            A showcase of the skills I’m continuously learning and improving
+            to grow as a developer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="hobbies" class="hobbies py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center text-gold mb-5 fade-in display-1">Hobbies</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-gamepad fa-3x text-gold mb-3"></i>
+              <h5 class="card-title">Gaming</h5>
+              <p class="card-text">
+                I enjoy exploring immersive worlds and competitive gaming.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-book fa-3x text-gold mb-3"></i>
+              <h5 class="card-title">Reading</h5>
+              <p class="card-text">
+                Books allow me to explore new ideas and learn new skills.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-basketball-ball fa-3x text-gold mb-3"></i>
+              <h5 class="card-title">Basketball</h5>
+              <p class="card-text">
+                Playing basketball helps me stay active and improve teamwork.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center text-gold mb-4 fade-in display-1">Contact Me</h2>
+      <p class="text-center mb-5 fade-in fs-3">
+        Feel free to reach out through the form below or connect with me on
+        social media.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 fade-in">
+          <form>
+            <div class="mb-3 fs-2">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3 fs-2">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3 fs-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Type your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold">Send Message</button>
+          </form>
+
+          <div class="text-center mt-5 fade-in">
+            <p>
+              <i class="fas fa-envelope text-gold me-2"></i>
+              ShonnieSalamera@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt text-gold me-2"></i> Philippines
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://github.com/Tooru-kokonoe" target="_blank" aria-label="GitHub" title="GitHub" class="me-3">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+              <a href="https://facebook.com/ShonnieSalamera1" target="_blank" aria-label="Facebook" title="Facebook">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Shonnie Salamera. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+  <script src="../../assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

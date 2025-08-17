@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dev.keith.io</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- MDB (STYLE) -->
+  <link rel="stylesheet" href="../../assets/css/mdb.min.css">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body data-mdb-theme="dark">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-none">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand me-2 fw-bold fs-4" href="#">
+        <span class="text-danger fw-bold me-1"><i class="fa-solid fa-code me-2"></i> dev.</span>keith.io
+      </a>
+
+      <!-- Toggle button -->
+      <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Centered nav links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link btn-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item btn-link">
+            <a class="nav-link btn-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item btn-link">
+            <a class="nav-link btn-link" href="#certificates">Certificates</a>
+          </li>
+        </ul>
+
+        <!-- Right aligned button -->
+        <div class="d-flex align-items-center">
+          <button data-mdb-ripple-init type="button" class="btn btn-outline-danger me-3 rounded-pill">
+            <i class="fa-regular fa-paper-plane me-2"></i>
+            Let's Talk!
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <header class="text-center text-white align-content-center min-vh-100 bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex flex-column-reverse d-md-flex flex-md-row justify-content-between align-items-center">
+
+        <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+          <h1 class="mb-3 display-3  fw-bold"><span class="text-danger fw-bold ">Hola</span>, I'm Keith Poncardas.</h1>
+
+          <style>
+            #role {
+              display: inline;
+              white-space: nowrap;
+              border-right: 2px solid black;
+              /* cursor */
+              animation: blinkCursor 0.7s steps(1) infinite;
+              /* optional for better visibility */
+            }
+
+            @keyframes blinkCursor {
+
+              0%,
+              50% {
+                border-color: white;
+              }
+
+              50.1%,
+              100% {
+                border-color: transparent;
+              }
+            }
+          </style>
+
+          <h2 class="mb-3 display-5">
+            <span class="text-danger fw-bold">&#60;</span> <span id="role" class="roboto-mono fw-medium"></span> <span class="text-danger fw-bold">&#47;</span> <span class="text-danger fw-bold">&#62;</span>
+          </h2>
+
+          <script>
+            const roles = ["Software Developer", "Record Producer"];
+            const element = document.getElementById("role");
+            let currentRole = 0;
+            let charIndex = 0;
+            let typing = true;
+
+            function typeWriter() {
+              if (typing) {
+                if (charIndex < roles[currentRole].length) {
+                  element.textContent += roles[currentRole].charAt(charIndex);
+                  charIndex++;
+                  setTimeout(typeWriter, 150);
+                } else {
+                  typing = false;
+                  setTimeout(typeWriter, 1000);
+                }
+              } else {
+                if (charIndex > 0) {
+                  element.textContent = roles[currentRole].substring(0, charIndex - 1);
+                  charIndex--;
+                  setTimeout(typeWriter, 100);
+                } else {
+                  typing = true;
+                  currentRole = (currentRole + 1) % roles.length;
+                  setTimeout(typeWriter, 500);
+                }
+              }
+            }
+
+            typeWriter();
+          </script>
+
+
+          <p class="mb-4 fs-5 fw-light">
+            I'm into software development and making music. I love coding cool stuff and producing tracks in my free time. For me, it’s all about mixing tech and creativity to have fun and build something awesome.
+          </p>
+
+          <a class="btn btn-danger btn-lg btn-rounded me-2" href="#" role="button"><i class="fa-regular fa-paper-plane me-2"></i> Hire Me</a>
+          <a class="btn btn-outline-light btn-lg btn-rounded" href="#" role="button"><i class="fa-solid fa-download me-2"></i> Download CV</a>
+        </div>
+
+        <div class="col-md-5 mt-4 mt-md-0 d-flex justify-content-center position-relative d-none d-lg-block" data-aos="fade-left" style="min-height: 380px;">
+
+          <!-- Avatar Center -->
+          <div class="avatar-border-wrapper">
+            <img src="https://avatars.githubusercontent.com/u/92511878?v=4" class="rounded-circle hover-shadow img-fluid" alt="Edward" />
+          </div>
+
+
+          <!-- Skills around avatar -->
+          <div class="skill-icon skill-js shadow-none" data-aos="zoom-in" data-aos-delay="100" title="JavaScript">
+            <i class="fab fa-js-square fa-3x text-warning"></i>
+          </div>
+          <div class="skill-icon skill-react shadow-none" data-aos="zoom-in" data-aos-delay="200" title="React">
+            <i class="fab fa-react fa-3x text-info"></i>
+          </div>
+          <div class="skill-icon skill-node shadow-none" data-aos="zoom-in" data-aos-delay="300" title="Node.js">
+            <i class="fab fa-node-js fa-3x text-success"></i>
+          </div>
+          <div class="skill-icon skill-express shadow-none" data-aos="zoom-in" data-aos-delay="400" title="Express.js">
+            <i class="fas fa-server fa-3x text-secondary"></i>
+          </div>
+          <div class="skill-icon skill-mongo shadow-none" data-aos="zoom-in" data-aos-delay="500" title="MongoDB">
+            <i class="fab fa-envira fa-3x" style="color:#4DB33D;"></i>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#3b3b3b" fill-opacity="1" d="M0,128L30,128C60,128,120,128,180,138.7C240,149,300,171,360,176C420,181,480,171,540,138.7C600,107,660,53,720,42.7C780,32,840,64,900,85.3C960,107,1020,117,1080,117.3C1140,117,1200,107,1260,101.3C1320,96,1380,96,1410,96L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+  </svg>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+
+    <!-- VIEW MY WORKS -->
+    <section class="row g-3 mb-5">
+      <div class="col-12 col-md-4">
+        <div class="card bg-body-tertiary h-100" data-aos="fade-up" data-aos-delay="0" data-aos-easing="ease-out-back" data-aos-duration="800">
+          <div class="card-body d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-auto d-flex align-items-center">
+                <img src="./assets/img/repository.png" alt="GitHub" style="width: 50px; height: 50px;" />
+              </div>
+              <div class="col">
+                <h2 class="h4 text-danger fw-bold">Repositories</h2>
+                <p class="m-0">See my repos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card bg-body-tertiary h-100" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-out-back" data-aos-duration="800">
+          <div class="card-body d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-auto d-flex align-items-center">
+                <img src="./assets/img/project.png" alt="Projects" style="width: 50px; height: 50px;" />
+              </div>
+              <div class="col">
+                <h2 class="h4 text-danger fw-bold">Projects</h2>
+                <p class="m-0">Check out my latest projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card bg-body-tertiary h-100" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-out-back" data-aos-duration="800">
+          <div class="card-body d-flex align-items-center">
+            <div class="row w-100">
+              <div class="col-auto d-flex align-items-center">
+                <img src="./assets/img/music.png" alt="Music" style="width: 48px; height: 48px;" />
+              </div>
+              <div class="col">
+                <h2 class="h4 text-danger fw-bold">Music</h2>
+                <p class="m-0">Listen to my covers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <section id="about" class="text-center text-white min-vh-100 align-content-center">
+    <div class="container my-5">
+
+      <div class="d-flex flex-column-reverse d-md-flex flex-md-row justify-content-between align-items-center">
+
+        <div class="col-md-5 mt-4 mt-md-0 d-flex justify-content-center position-relative p-0">
+          <img src="https://avatars.githubusercontent.com/u/92511878?v=4" class="hover-shadow rounded-3 mb-4 img-fluid" alt="Edward" />
+
+          <div data-aos="fade-right" class="position-absolute top-0 start-0 m-3" style="background: rgba(139, 139, 139, 0.842); border-radius: 0.5rem; padding: 0.5rem 1rem; max-width: fit-content;">
+            <div class="card-body px-4">
+              <span class="text-danger fw-bold fs-5 d-block">25+</span>
+              <span>Active Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center text-md-start">
+          <p class="text-danger fs-3">About Me</p>
+          <h1 class="mb-3 display-3 fw-bold">I'm Keith Ralph Poncardas.</h1>
+
+          <p class="mb-4  fw-light lead">
+            Hi, I'm <span class="fw-bold text-danger">Keith Ralph Poncardas</span>, 22 years old. I like spending my time doing things I'm really interested in like creating apps. It's not just about coding for me; I'm more into the engineering side and figuring out the business logic behind it. Aside from that, I love making music. I've even covered quite a few songs on my YouTube channel.
+          </p>
+
+
+          <figure class="text-center my-4">
+            <blockquote class="blockquote">
+              <p class="fs-6"><i class="fa-solid fa-quote-left me-1 text-danger"></i> However bad life may seem, there is always something you can do and succeed at. Where there's life, there's hope.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-danger">
+              Stephen Hawking
+            </figcaption>
+          </figure>
+
+          <a class="btn btn-danger btn-lg btn-rounded me-2" href="#" role="button"><i class="fa-regular fa-paper-plane me-2"></i> Hire Me</a>
+          <a class="btn btn-outline-light btn-lg btn-rounded" href="#" role="button"><i class="fa-solid fa-download me-2"></i> Download CV</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+
+    <!-- Skills Section -->
+    <section id="skills" class="min-vh-100 align-content-center">
+      <div class="container">
+
+        <div class="mb-5" data-aos="fade-up">
+          <h2 class="text-center fw-bold display-5 mb-2">Technical Skills</h2>
+          <p class="text-center text-danger fw-semibold fs-5">
+            My current tech skills as of now
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- JavaScript -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-js-square fa-4x text-warning"></i>
+              </div>
+              <h5 class="mb-0">JavaScript</h5>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-react fa-4x text-info"></i>
+              </div>
+              <h5 class="mb-0">React</h5>
+            </div>
+          </div>
+
+          <!-- Node.js -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-node-js fa-4x text-success"></i>
+              </div>
+              <h5 class="mb-0">Node.js</h5>
+            </div>
+          </div>
+
+          <!-- Express.js -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fas fa-server fa-4x text-secondary"></i>
+              </div>
+              <h5 class="mb-0">Express.js</h5>
+            </div>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-envira fa-4x" style="color:#4DB33D;"></i>
+              </div>
+              <h5 class="mb-0">MongoDB</h5>
+            </div>
+          </div>
+
+          <!-- Redis -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fas fa-database fa-4x text-danger"></i>
+              </div>
+              <h5 class="mb-0">Redis</h5>
+            </div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-html5 fa-4x text-danger"></i>
+              </div>
+              <h5 class="mb-0">HTML 5</h5>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-css3-alt fa-4x text-primary"></i>
+              </div>
+              <h5 class="mb-0">CSS 3</h5>
+            </div>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+            <div class="card shadow-sm border-0 h-100 text-center p-3 skill-card">
+              <div class="mb-3">
+                <i class="fab fa-bootstrap fa-4x text-primary"></i>
+              </div>
+              <h5 class="mb-0">Bootstrap 5</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MDB and FontAwesome CDN for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <style>
+      /* Optional: Skill card hover effect */
+      .skill-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: default;
+        border-radius: 1rem;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+
+
+    <section id="projects" class="text-center my-5 min-vh-100 align-content-center">
+      <div class="container">
+
+        <div class="mb-5" data-aos="fade-up" data-aos-duration="800">
+          <h2 class="text-center fw-bold display-5 mb-2">My Projects</h2>
+          <p class="text-center text-danger fw-semibold fs-5">
+            A glimpse of some of my recent work.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 shadow-4 hover-shadow ripple" style="border-radius: 20px; overflow: hidden;" data-mdb-ripple-color="light">
+              <!-- Image with gradient overlay -->
+              <div class="bg-image">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(34).webp" class="img-fluid" alt="Project Image" />
+                <div class="mask d-flex flex-column justify-content-end p-3" style="background: linear-gradient(180deg, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.6) 100%);">
+                  <h5 class="text-white fw-bold mb-0">Konek <span class="badge bg-danger ms-1">New!</span></h5>
+                </div>
+              </div>
+
+              <!-- Card body -->
+              <div class="card-body">
+                <p class="text-muted mb-3">
+                  A Full Stack mobile-first web app, inspired by Facebook.
+                </p>
+
+                <!-- Tech Stack Icons -->
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge badge-light border"><i class="fab fa-envira me-1" style="color:#4DB33D;"></i> MongoDB</span>
+                  <span class="badge badge-light border"><i class="fab fa-react fa-lg text-info me-1"></i> React</span>
+                  <span class="badge badge-light border"><i class="fas fa-server text-secondary me-1"></i> Express</span>
+                  <span class="badge badge-light border"><i class="fab fa-node fa-lg text-success me-1"></i> NodeJS</span>
+                  <span class="badge badge-light border"><i class="fas fa-database text-danger me-1"></i> Redis</span>
+                  <span class="badge badge-light border"><i class="fab fa-bootstrap text-primary me-1"></i> MDB</span>
+                </div>
+              </div>
+
+              <div class="m-3">
+                <a href="#!" class="btn btn-danger btn-rounded w-100" data-mdb-ripple-init>View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 shadow-4 hover-shadow ripple" style="border-radius: 20px; overflow: hidden;" data-mdb-ripple-color="light">
+              <!-- Image with gradient overlay -->
+              <div class="bg-image">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(34).webp" class="img-fluid" alt="Project Image" />
+                <div class="mask d-flex flex-column justify-content-end p-3" style="background: linear-gradient(180deg, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.6) 100%);">
+                  <h5 class="text-white fw-bold mb-0">Snapgram</h5>
+                </div>
+              </div>
+
+              <!-- Card body -->
+              <div class="card-body">
+                <p class="text-muted mb-3">
+                  A Full Stack instagram clone, with the very basic CRUD features.
+                </p>
+
+                <!-- Tech Stack Icons -->
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge badge-light border"><i class="fab fa-react fa-lg text-info me-1"></i> React</span>
+                  <span class="badge badge-light border"><i class="fab fa-node fa-lg text-success me-1"></i> NodeJS</span>
+                  <span class="badge badge-light border"><i class="fas fa-database text-danger me-1"></i> Appwrite</span>
+                  <span class="badge badge-light border"><i class="fab fa-bootstrap text-primary me-1"></i> MDB</span>
+                </div>
+
+              </div>
+
+              <!-- Action button -->
+              <div class="m-3">
+                <a href="#!" class="btn btn-danger btn-rounded w-100" data-mdb-ripple-init>View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 shadow-4 hover-shadow ripple" style="border-radius: 20px; overflow: hidden;" data-mdb-ripple-color="light">
+              <!-- Image with gradient overlay -->
+              <div class="bg-image">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(34).webp" class="img-fluid" alt="Project Image" />
+                <div class="mask d-flex flex-column justify-content-end p-3" style="background: linear-gradient(180deg, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.6) 100%);">
+                  <h5 class="text-white fw-bold mb-0">Notify</h5>
+                </div>
+              </div>
+
+              <!-- Card body -->
+              <div class="card-body">
+                <p class="text-muted mb-3">
+                  This app serves as a simple social media application built by Keith Poncardas.
+                </p>
+
+                <!-- Tech Stack Icons -->
+                <div class="mb-3 d-flex flex-wrap gap-1">
+                  <span class="badge badge-light border"><i class="fab fa-envira me-1" style="color:#4DB33D;"></i> MongoDB</span>
+                  <span class="badge badge-light border"><i class="fab fa-js fa-lg text-warning me-1"></i> EJS</span>
+                  <span class="badge badge-light border"><i class="fas fa-server text-secondary me-1"></i> Express</span>
+                  <span class="badge badge-light border"><i class="fab fa-node fa-lg text-success me-1"></i> NodeJS</span>
+                  <span class="badge badge-light border"><i class="fas fa-database text-danger me-1"></i> Redis</span>
+                  <span class="badge badge-light border"><i class="fab fa-bootstrap text-primary me-1"></i> MDB</span>
+                </div>
+
+              </div>
+
+              <div class="m-3">
+                <a href="#!" class="btn btn-danger btn-rounded w-100" data-mdb-ripple-init>View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="py-5 min-vh-100 align-content-center">
+      <div class="container">
+
+        <!-- Section Heading -->
+        <div class="mb-5" data-aos="fade-up">
+          <h2 class="text-center fw-bold display-5 mb-2">Certificates</h2>
+          <p class="text-center text-danger fw-semibold fs-5">
+            Certificates I earned during my courses
+          </p>
+        </div>
+
+        <!-- Certificate Row 1 -->
+        <div class="card shadow-4-strong mb-5 border-0 rounded-6 overflow-hidden hover-shadow transition-all" data-aos="fade-up">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+              <div class="bg-image hover-overlay ripple rounded-start p-3" data-mdb-ripple-color="light">
+                <img src="./assets/img/web-development-certificate.jpg" class="img-fluid rounded-4 shadow-sm" alt="Web Dev Certificate">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-2 fs-4">Web Development Bootcamp</h5>
+                <p class="text-muted mb-3">Udemy | 2025</p>
+                <p class="mb-3">
+                  Completed Colt Steele’s full-stack Web Development Bootcamp, gaining hands-on experience in:
+                </p>
+                <ul class="mb-4 ps-3" style="list-style-type: disc; line-height: 1.8;">
+                  <li><strong>Frontend:</strong> HTML5, CSS3, Responsive Design, Bootstrap, JavaScript (ES6+), DOM Manipulation</li>
+                  <li><strong>Backend:</strong> Node.js, Express.js, RESTful APIs, Authentication & Authorization</li>
+                  <li><strong>Database:</strong> MongoDB, Mongoose, CRUD Operations</li>
+                  <li><strong>Development Tools:</strong> Git, GitHub, Deployment Workflows</li>
+                  <li><strong>Projects:</strong> Multiple real-world web apps applying industry best practices</li>
+                </ul>
+                <a href="#!" class="btn btn-danger rounded-pill btn-sm px-4 shadow-1-strong" data-mdb-ripple-init>View Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate Row 2 -->
+        <div class="card shadow-4-strong mb-5 border-0 rounded-6 overflow-hidden hover-shadow transition-all" data-aos="fade-up">
+          <div class="row g-0 align-items-center flex-md-row-reverse">
+            <div class="col-md-4">
+              <div class="bg-image hover-overlay ripple rounded-end p-3" data-mdb-ripple-color="light">
+                <img src="./assets/img/alibaba-certificate.png" class="img-fluid rounded-4 shadow-sm" alt="Alibaba Certificate">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body p-4">
+                <h5 class="fw-bold mb-2 fs-4">Alibaba Webinar</h5>
+                <p class="text-muted mb-3">Alibaba | 2025</p>
+                <p class="mb-3">
+                  Participated in an online webinar hosted by Alibaba, gaining insights in:
+                </p>
+                <ul class="mb-4 ps-3" style="list-style-type: disc; line-height: 1.8;">
+                  <li><strong>E-commerce Trends:</strong> Current global online retail patterns and market growth opportunities</li>
+                  <li><strong>Cross-Border Trade:</strong> Strategies for selling products internationally through Alibaba’s platform</li>
+                  <li><strong>Digital Transformation:</strong> Leveraging technology to streamline business operations</li>
+                  <li><strong>Alibaba Ecosystem:</strong> Understanding logistics, supply chain, and partner integrations</li>
+                  <li><strong>LLM (DeepSeek) Applications:</strong> Using large language models to enhance customer engagement, automate processes, and analyze market data</li>
+                </ul>
+                <a href="#!" class="btn btn-danger rounded-pill btn-sm px-4 shadow-1-strong" data-mdb-ripple-init>View Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+  </div>
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="bg-body-tertiary text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- About / Developer Note -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">About This Site</h5>
+          <p class="text-muted">
+            This website is developed and maintained by <strong class="text-danger">Keith Ralph Poncardas</strong>. built using Material Bootstrap (MDB) built on top of Bootstrap 5 to ensure it's responsive and easy to use.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-decoration-none text-muted">Home</a></li>
+            <li><a href="#about" class="text-decoration-none text-muted">About</a></li>
+            <li><a href="#services" class="text-decoration-none text-muted">Services</a></li>
+            <li><a href="#contact" class="text-decoration-none text-muted">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Socials -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Connect with Me</h5>
+          <div class="d-flex gap-3">
+            <a href="https://github.com/Keith-Poncardas" class="text-danger fs-5"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/@keithponcardasofficial" class="text-danger fs-5"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://soundcloud.com/keithponcardasmusic" class="text-danger fs-5"><i class="fa-brands fa-soundcloud"></i></a>
+            <a href="https://www.facebook.com/kitkat.poncardas" class="text-danger fs-5"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary">
+
+      <!-- Bottom -->
+      <div class="text-center text-muted">
+        <small>&copy; 2025 All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <!-- MDB (SCRIPT) -->
+  <script src="../../assets/js/mdb.es.min.js"></script>
+</body>
+
+</html>

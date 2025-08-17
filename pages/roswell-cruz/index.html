@@ -1,0 +1,370 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/home-alt-2-regular-24 (1).png" type="image/x-icon">
+    <title>Roswell Cruz - Frontend Developer</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm py-3 ">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="#home">
+          <span class="brand-text"><i class="fa fa-crown"></i> RC</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <div class="toggler-bar"></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-4 gap-2 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../index.html" class="btn-home rounded-pill">Home Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6">
+            <h1 class="display-4 fw-bold text-light mb-3">
+              Hello, I'm <span id="typewriter" class="text-warning"></span>
+            </h1>
+            <h2 class="h4 text-light mb-3">Frontend Developer</h2>
+            <p class="lead text-light mb-4">
+              I create elegant, high-performance websites using modern frontend technologies.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+              <a href="#projects" class="btn btn-warning btn-lg text-dark px-4">View Projects</a>
+              <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+            </div>
+            <div class="mt-4 d-flex justify-content-center justify-content-md-start gap-3">
+              <a href="https://github.com/roswell23" target="_blank" class="text-light fs-4"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/roswell.cruz.22439" target="_blank" class="text-light fs-4"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/sp4rkross/" target="_blank" class="text-light fs-4"><i class="fab fa-instagram"></i></a>
+              <a href="https://x.com/Sp4rkross_" target="_blank" class="text-light fs-4"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="rounded-4 p-4 p-lg-5 shadow-lg about-card">
+          <div class="row align-items-center ">
+            <div class="col-lg-5 text-center" data-aos="fade-left">
+              <img src="./img/397437227_351351273940240_3259295406200099479_n.jpg" alt="Roswell Cruz" class="img-fluid rounded-5 shadow-sm about-img" />
+            </div>
+            <div class="col-lg-7" data-aos="fade-right">
+              <h2 class="section-title text-center  mb-3">About Me</h2>
+              <p class="about-text">
+                Hello! I'm <strong>Roswell Cruz</strong>, a passionate tech enthusiast from Cavite, Philippines. Currently pursuing my studies at Cavite State University-Tanza, I'm dedicated to becoming a skilled Frontend Developer.
+              </p>
+              <p class="about-text">
+                I love creating beautiful and functional web experiences that make a difference. My goal is to combine technical expertise with creative design to build engaging digital solutions.
+              </p>
+              <div class="row mt-4 text-center text-lg-center">
+                <div class="col-6">
+                  <div class="stat-box py-3 px-2 rounded-3">
+                    <h3 class="stat-number mb-1">4+</h3>
+                    <p class="stat-text ">Projects Built</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="stat-box py-3 px-2 rounded-3">
+                    <h3 class="stat-number mb-1">100%</h3>
+                    <p class="stat-text">Dedication</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Favorite Games Section -->
+    <section id="games" class="py-5 bg-black text-white">
+      <div class="container">
+        <h2 class="section-title text-center mb-5" data-aos="fade-up">My Favorite Games</h2>
+        <div class="row g-4 justify-content-center">
+          <!-- Valorant -->
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="100">
+            <div class="game-card text-center p-4 rounded-4 shadow-lg bg-dark h-100">
+              <img src="./img/Valorant_logo_-_pink_color_version.svg" alt="Valorant" class="img-fluid mb-3" style="max-height: 80px;">
+              <h4 class="text-warning">Valorant</h4>
+              <p class="text-light">Tactical shooter with intense 5v5 gameplay and unique agent abilities.</p>
+            </div>
+          </div>
+
+          <!-- Albion Online -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="game-card text-center p-4 rounded-4 shadow-lg bg-dark h-100">
+              <img src="./img/d231792e1e344570fd2a3f740327998d.jpg" alt="Albion Online" class="img-fluid mb-3" style="max-height: 80px;">
+              <h4 class="text-warning">Albion Online</h4>
+              <p class="text-light">Open-world sandbox MMO focused on player-driven economy and PvP.</p>
+            </div>
+          </div>
+
+          <!-- League of Legends -->
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+            <div class="game-card text-center p-4 rounded-4 shadow-lg bg-dark h-100">
+              <img src="./img/League of Legends.jpg" alt="League of Legends" class="img-fluid mb-3" style="max-height: 80px;">
+              <h4 class="text-warning">League of Legends</h4>
+              <p class="text-light">Fast-paced MOBA where strategy, mechanics, and teamwork win battles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">My Skills</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+              </div>
+              <h3>HTML5</h3>
+              <p>Semantic markup and modern web standards</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+              </div>
+              <h3>CSS3</h3>
+              <p>Responsive design and animations</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="300">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              </div>
+              <h3>JavaScript</h3>
+              <p>Modern ES6+ and interactive features</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="400">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+              </div>
+              <h3>Bootstrap</h3>
+              <p>Responsive frameworks and components</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+              </div>
+              <h3>Python</h3>
+              <p>Backend development and automation</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-delay="600">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+              </div>
+              <h3>Java</h3>
+              <p>Object-oriented programming</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title text-center text-gold mb-5" data-aos="fade-up">
+          Featured Projects
+        </h2>
+
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Project 1 -->
+            <div class="carousel-item active">
+              <div class="project-card mx-auto" style="max-width: 400px;">
+                <div class="project-image">
+                  <img src="./img/basic cal.png" alt="Basic Calculator" class="img-fluid">
+                </div>
+                <div class="project-content">
+                  <h3>Basic Calculator</h3>
+                  <p>A clean and functional web-based calculator with modern design.</p>
+                  <a href="https://calculatorniross.netlify.app" target="_blank" class="btn btn-sm btn-gold">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="carousel-item">
+              <div class="project-card mx-auto" style="max-width: 400px;">
+                <div class="project-image">
+                  <img src="./img/kapeniross.png" alt="Coffee Website" class="img-fluid">
+                </div>
+                <div class="project-content">
+                  <h3>Coffee Website</h3>
+                  <p>An elegant website showcasing coffee varieties and brewing tips.</p>
+                  <a href="https://kape-po.netlify.app" target="_blank" class="btn btn-sm btn-gold">View Project</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="carousel-item">
+              <div class="project-card mx-auto" style="max-width: 400px;">
+                <div class="project-image">
+                  <img src="./img/image.png" alt="To-Do List" class="img-fluid">
+                </div>
+                <div class="project-content">
+                  <h3>To-Do List</h3>
+                  <p>A modern task management application with local storage.</p>
+                  <a href="https://todopart2.netlify.app/" target="_blank" class="btn btn-sm btn-gold">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="section-title text-center fw-bold text-gold mb-5" data-aos="fade-up">Get In Touch</h2>
+        <div class="row g-5">
+
+          <!-- Contact Info -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="contact-info">
+              <h3 class="fw-bold text-gold mb-3">Let's Talk</h3>
+              <p class="mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+              <!-- Email -->
+              <div class="contact-item d-flex align-items-start mb-4">
+                <i class="fas fa-envelope fa-lg text-gold me-3 mt-1"></i>
+                <div>
+                  <h4 class="text-gold mb-1">Email</h4>
+                  <a href="mailto:cryefionacruz@gmail.com" class="text-white text-decoration-none">
+                    cryefionacruz@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item d-flex align-items-start mb-4">
+                <i class="fas fa-location-dot fa-lg text-gold me-3 mt-1"></i>
+                <div>
+                  <h4 class="text-gold mb-1">Location</h4>
+                  <p class="mb-0">
+                    Pamayanang Maliksi Ph5 Blk 12 Lot 4<br>
+                    Matatag St. Pasong Kawayan II<br>
+                    General Trias, Cavite
+                  </p>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="social-links mt-3">
+                <a href="https://github.com/roswell23" target="_blank" class="me-3 text-white fs-5"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/roswell.cruz.22439" target="_blank" class="me-3 text-white fs-5"><i class="fab fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/sp4rkross/" target="_blank" class="me-3 text-white fs-5"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Sp4rkross_" target="_blank" class="text-white fs-5"><i class="fab fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <form id="contactForm" class="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control bg-dark text-white border-secondary" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control bg-dark text-white border-secondary" id="subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control bg-dark text-white border-secondary" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn w-100 text-dark fw-bold" style="background-color: #ffbe0b;">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <div class="footer-content">
+          <p>&copy; <span id="currentYear"></span> Roswell Cruz. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+
+  </html>
