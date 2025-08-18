@@ -83,5 +83,5 @@ html, body {
   pointer-events: none;
   /* pili ka: solid dim o gradient */
   /* background: rgba(0,0,0,.35); */
-  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0, 0, 0, 0.705));
+  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0, 0, 0, 0.534));
 }
