@@ -1,87 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-html, body {
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
-    max-width: 100%;
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* CLIENT CARD STYLES */
 .client-card {
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 20px;
 }
 
 .client-card img {
-    max-height: 40px;
-    filter: grayscale(100%);
-    opacity: 0.8;
-    transition: all 0.3s ease;
+  max-height: 40px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
 .client-card:hover img {
-    filter: grayscale(0%);
-    opacity: 1;
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 /* CLIENT IMAGE STYLES */
 .client-image {
-    object-fit: cover; 
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* SERVICE STYLE */
 .icon-wrapper {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
 }
 
 .service-card {
-    border-radius: 20px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .service-card:hover .icon-wrapper {
-    transform: scale(1.1) rotate(8deg);
+  transform: scale(1.1) rotate(8deg);
 }
 
 /* BACKGROUND VIDEO */
 #bg-video {
   position: fixed;
-  inset: 0;              /* shorthand: top:0; right:0; bottom:0; left:0 */
+  inset: 0; /* shorthand: top:0; right:0; bottom:0; left:0 */
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  object-fit: cover;     /* para “cover” tulad ng background-size: cover */
-  z-index: -1;           /* nasa likod ng lahat */
-  pointer-events: none;  /* para di mahadlangan ang click/scroll sa content */
-  filter: none;          /* iwas stacking context issues */
+  object-fit: cover; /* para “cover” tulad ng background-size: cover */
+  z-index: -1; /* nasa likod ng lahat */
+  pointer-events: none; /* para di mahadlangan ang click/scroll sa content */
+  filter: none; /* iwas stacking context issues */
 }
 
 /* OPTIONAL OVERLAY (dim/gradient) */
 .bg-overlay {
   position: fixed;
   inset: 0;
-  z-index: -1;            /* nasa ibabaw ng video pero ilalim ng content */
+  z-index: -1; /* nasa ibabaw ng video pero ilalim ng content */
   pointer-events: none;
   /* pili ka: solid dim o gradient */
   /* background: rgba(0,0,0,.35); */
-  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0, 0, 0, 0.534));
+  background: linear-gradient(370deg, #3b72ca5b, rgba(0, 0, 0, 0.534));
 }
